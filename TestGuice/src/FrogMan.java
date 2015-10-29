@@ -7,4 +7,8 @@ public class FrogMan {
 	public FrogMan(Vehicle vehicle){
 		this.vehicle = vehicle;
 	}
+	
+	public void fightCrime(){
+		System.out.println("Fight Crime: "+this.vehicle.zoom());
+	}
 }
