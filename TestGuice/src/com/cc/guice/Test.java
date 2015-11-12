@@ -8,8 +8,7 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Injector injector = Guice.createInjector(new HelloGuiceModule());
-		HeroProvider heroProvider = injector.getInstance(HeroProvider.class);
-		Hero hero = heroProvider.get();
+		Hero hero = injector.getInstance(Hero.class);
 		hero.fightCrime();
 	
 		

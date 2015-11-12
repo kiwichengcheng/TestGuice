@@ -11,7 +11,12 @@ public class HeroProvider implements Provider<Hero> {
 	@Override
 	public Hero get() {
 		// TODO Auto-generated method stub
-		Hero hero = new FrogMan(vehicle);
+		Hero hero;
+		
+		if(Math.random()>.5)
+			hero = new FrogMan(vehicle);
+		else
+			hero = new WeaselGirl(vehicle);
 		return hero;
 	}
 

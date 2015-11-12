@@ -15,6 +15,6 @@ public class FrogMan implements Hero{
 	
 	@Override
 	public void  fightCrime(){
-		System.out.println(this.vehicle.zoom());
+		System.out.println("FrogMan:"+this.vehicle.zoom());
 	}
 }

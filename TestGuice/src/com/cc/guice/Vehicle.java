@@ -1,8 +1,8 @@
 package com.cc.guice;
 
-import com.google.inject.ImplementedBy;
+import com.google.inject.ProvidedBy;
 
-@ImplementedBy(WeaselCopter.class)
+@ProvidedBy(VehicleProvider.class)
 public interface Vehicle {
 	public String zoom();
 }

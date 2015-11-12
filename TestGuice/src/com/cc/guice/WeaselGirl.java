@@ -13,6 +13,6 @@ public class WeaselGirl implements Hero{
 	
 	@Override
 	public void fightCrime(){
-		System.out.println(this.vehicle.zoom());
+		System.out.println("WeaselGirl:"+this.vehicle.zoom());
 	}
 }
