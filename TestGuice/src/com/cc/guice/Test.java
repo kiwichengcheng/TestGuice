@@ -7,15 +7,18 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Injector injector = Guice.createInjector(new HelloGuiceModule());
-		Hero hero = injector.getInstance(Hero.class);
-		hero.fightCrime();
-	
-		
-	/*	Injector injector = Guice.createInjector(new HelloGuiceModule());
-		FrogMan hero = injector.getInstance(FrogMan.class);
-		hero.fightCrime();
-		*/
+
+		for (int i = 0; i < 10; i++) {
+			Injector injector = Guice.createInjector(new HelloGuiceModule());
+			Hero hero = injector.getInstance(Hero.class);
+			hero.fightCrime();
+		}
+
+		/*
+		 * Injector injector = Guice.createInjector(new HelloGuiceModule());
+		 * FrogMan hero = injector.getInstance(FrogMan.class);
+		 * hero.fightCrime();
+		 */
 	}
 
 }

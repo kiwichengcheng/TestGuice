@@ -7,7 +7,13 @@ public class VehicleProvider implements Provider<Vehicle>{
 	@Override
 	public Vehicle get() {
 		// TODO Auto-generated method stub
-		return null;
+		Vehicle vehicle;
+		
+		if(Math.random()>.5)
+			vehicle = new FrogMobile();
+		else
+			vehicle = new WeaselCopter();
+		return vehicle;
 	}
 
 }
